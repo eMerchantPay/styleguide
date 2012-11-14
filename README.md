@@ -61,7 +61,9 @@ personal preferences. The original can be found
 
 * Using the return value of = is okay:
 
-    ```Ruby if v = array.grep(/foo/) ... ```
+    ```Ruby
+    if v = array.grep(/foo/) ... 
+    ```
 
 * Use ||= freely.
 
