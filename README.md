@@ -1,11 +1,11 @@
-= Christian Neukirchen's Ruby Style Guide
+# Christian Neukirchen's Ruby Style Guide
 
 This is a fork of Christian Neukirchen's Ruby Style Guide, with some of my
 personal preferences. The original can be found
 [here](https://github.com/chneukirchen/styleguide).
 
 
-== Formatting:
+## Formatting:
 
 * Use ASCII (or UTF-8, if you have to).
 
@@ -33,7 +33,7 @@ personal preferences. The original can be found
 * Avoid trailing whitespace like the plague.
 
 
-== Syntax:
+## Syntax:
 
 * Use def with parentheses when there are arguments.
 
@@ -43,25 +43,25 @@ personal preferences. The original can be found
 
 * Use parentheses when calling methods when they're worded as commands or look
   like "functions". For example:
-
+    ```Ruby
     x = Math.sin(y)
     user = User.find(3)
     point.translate(0, 1)
-
+    ```
   Avoid parentheses when the method call has a DSL feel and is alone on the
   line, like:
-
+    ```Ruby
     has_many :users
     link_to "Foo", bar_path
     collection.include? 3
-
+    ```
 * Avoid return where not required.
 
 * Avoid line continuation (\) where not required.
 
 * Using the return value of = is okay:
 
-    if v = array.grep(/foo/) ...
+    ```Ruby if v = array.grep(/foo/) ... ```
 
 * Use ||= freely.
 
@@ -69,7 +69,7 @@ personal preferences. The original can be found
   =~, $0-9, $~, $` and $' when needed.
 
 
-== Naming:
+## Naming:
 
 * Use snake_case for methods.
 
@@ -109,14 +109,14 @@ personal preferences. The original can be found
   size over length.
 
 
-== Comments:
+## Comments:
 
 * Comments longer than a sentence are capitalized and use punctuation.
 
 * Avoid superfluous comments.
 
 
-== The rest:
+## The rest:
 
 * Avoid long methods.
 
@@ -132,7 +132,7 @@ personal preferences. The original can be found
 * Avoid needless metaprogramming.
 
 
-== General:
+## General:
 
 * Code in a functional way, avoid mutation when it makes sense.
 
