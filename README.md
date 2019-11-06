@@ -57,7 +57,7 @@ personal preferences. The original can be found
     ```
 * Avoid return where not required.
 
-* Avoid line continuation (\) where not required.
+* Avoid line continuation (`\`) where not required.
 
 * Using the return value of = is okay:
 
